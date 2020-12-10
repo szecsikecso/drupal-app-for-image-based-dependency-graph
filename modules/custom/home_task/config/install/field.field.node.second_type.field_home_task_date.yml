@@ -1,0 +1,21 @@
+maxuuid: 866ba51a-884d-40a6-8f4d-6d89e92f14f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_task_date
+    - node.type.second_type
+  module:
+    - datetime
+id: node.second_type.field_home_task_date
+field_name: field_home_task_date
+entity_type: node
+bundle: second_type
+label: 'Home Task Date'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

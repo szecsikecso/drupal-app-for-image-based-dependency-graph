@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Overriden Seven's theme implementation to display a single Drupal page.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+<header class="content-header clearfix">
+  <div class="layout-container">
+    {{ page.header }}
+  </div>
+</header>
+
+<div class="layout-container">
+  {{ page.pre_content }}
+{#{{ page.breadcrumb }}#}
+  <main class="page-content clearfix" role="main">
+    <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
+    {{ page.highlighted }}
+    {% if page.help %}
+      <div class="help">
+        {{ page.help }}
+      </div>
+    {% endif %}
+    {{ page.content }}
+  </main>
+  <footer class="site-footer">
+    <div>Developed by Zsolt Szécsényi - 2020</div>
+  </footer>
+</div>

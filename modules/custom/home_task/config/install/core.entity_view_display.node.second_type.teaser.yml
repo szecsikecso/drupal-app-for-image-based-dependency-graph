@@ -1,0 +1,32 @@
+uuid: b7994ffc-e2d1-4576-a44c-d902528db86d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.second_type.body
+    - field.field.node.second_type.field_home_task_date
+    - node.type.second_type
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: ijYlsKh82CxtQZWQGIHfM_kRpGexjtgMCp--cqlQ-0A
+id: node.second_type.teaser
+targetEntityType: node
+bundle: second_type
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_home_task_date: true

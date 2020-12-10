@@ -1,0 +1,16 @@
+
+home_task.default_controller_hello:
+  path: '/hello/{name}'
+  defaults:
+    _controller: '\Drupal\home_task\Controller\DefaultController::hello'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+home_task.default_controller_dependency_graph:
+  path: '/dependency_graph'
+  defaults:
+    _controller: '\Drupal\home_task\Controller\DefaultController::dependencyGraph'
+    _title: 'Dependency Graph'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,87 @@
+
+I've based my excersise development on a new Drupal 8.9.7 installation.
+
+I've installed drupal/console for code generation,
+which is not compatible with Composer 2.0 so I've rollbacked my composer to 1.x
+
+With Composer 1.x I've run into memory issue so I could use composer with prefix:
+COMPOSER_MEMORY_LIMIT=-1
+
+README
+------
+
+- Please run "composer install" before executing the web application
+- For the 3rd excercise there are more steps to do for setup - see Section Graphviz below
+
+1st excercise
+-------------
+
+Generated a custom theme based on seven built-in theme.
+Using: "drupal generate:theme"
+Named as: "Home Task Theme" - "home_task_theme"
+
+Implemented the solution under home_task_theme_preprocess_page hook
+To log all the required data:
+
+- routeId, I assumed it's the Route Name attribute
+- basic route, which I assumed could be Route Path attribute or the basic PathInfo attribute, so I included both of them. 
+
+2nd excercise
+-------------
+
+Generated a new custom module
+Using "drupal generate:module"
+Named as: "Home Task" - "home_task"
+
+Generated first_type and second_type content types by
+Using: "drupal generate:entity:bundle"
+
+Then I've created a new common field
+Named as: Home Task Date
+And added it into first_type and second_type as well.
+
+Yaml configuration files could be found under:
+modules/custom/home_task/config/install
+
+3rd excercise
+-------------
+
+I've found a Drupal module called "Dependency Visualizer", which is fulfilling the expected solution and its latest version is compatible with Drupal 8.x, so I've decided to try out the solution.
+https://www.drupal.org/project/dependency_visualizer
+
+Installed "drupal/dependency_visualizer" and its dependency library "almende/vis" based on the given  instructions and Acitvited the plugin which is serving us on:
+{HOST}/dependency_visualizer/visualize
+
+Remainder, this is a Javascript based solution
+
+I've developed my solution based on dependency_visualizer,
+so I've used my home_task module - DefaultController and DefaultService to provide my graph visual on:
+{HOST}/dependency_graph
+
+Remainder, this is an Image generation (SVG) based solution
+
+Used 3rd party modules:
+1. https://packagist.org/packages/clue/graph
+2. https://packagist.org/packages/graphp/graphviz
+3. https://www.graphviz.org/
+
+1st and 2nd modules will be provided by composer install
+
+Graphviz
+--------
+
+3rd requires environment specific handling:
+
+On Debian/Ubuntu-based distributions:
+sudo apt install graphviz
+
+On Windows ZIP should be downloaded and placed at local drive for example C:\Graphviz
+https://www2.graphviz.org/Packages/stable/windows/10/msbuild/Release/Win32/graphviz-2.44.1-win32.zip
+
+I've used Drupal Settings to provide path for the executable:
+{APP_ROOT}sites/default/settings.local.php
+
+Contains:
+$settings['graph_viz_executable'] = 'C:\Graphviz\bin\dot.exe';
+
+I've provided error handling and giving guidance when Windows specific or general Graphviz error appears

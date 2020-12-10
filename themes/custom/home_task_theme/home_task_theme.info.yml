@@ -1,0 +1,8 @@
+name: Home Task Theme
+type: theme
+description: 'My Home Task theme'
+package: Other
+core: 8.x
+libraries:
+  - home_task_theme/global-styling
+base theme: seven

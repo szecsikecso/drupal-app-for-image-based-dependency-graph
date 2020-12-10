@@ -1,0 +1,11 @@
+name: 'dependency_visualizer'
+type: module
+description: 'This module visualizes the dependency tree'
+# core: 8.x
+package: 'miscellaneous[D[D[D[D[D[D[D[D[D[D[D[D[D[D[3~M'
+
+# Information added by Drupal.org packaging script on 2019-02-01
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'dependency_visualizer'
+datestamp: 1549007584

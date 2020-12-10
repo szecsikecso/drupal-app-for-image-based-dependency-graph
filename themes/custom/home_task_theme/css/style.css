@@ -1,0 +1,13 @@
+/**
+ * Customize body to grow its width according to huge SVG object
+ */
+body {
+  min-width: fit-content;
+}
+
+/**
+ * Customize spacing to bottom of pages
+ */
+.page-content {
+  margin-bottom: 20px;
+}

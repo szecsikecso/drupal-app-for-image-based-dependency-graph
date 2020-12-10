@@ -1,0 +1,39 @@
+uuid: 170255ef-d0c8-4926-a1c4-41dbbc56ac30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.second_type.body
+    - field.field.node.second_type.field_home_task_date
+    - node.type.second_type
+  module:
+    - datetime
+    - text
+    - user
+_core:
+  default_config_hash: B3BK8mRGJ6aBTrUZp-EkMtieV2yBOC1-pB_SIywwe_M
+id: node.second_type.default
+targetEntityType: node
+bundle: second_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_home_task_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

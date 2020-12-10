@@ -1,0 +1,13 @@
+{
+    "name": "home_task",
+    "type": "drupal-module",
+    "description": "My Home Task Module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/home_task",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/home_task",
+        "source": "http://cgit.drupalcode.org/home_task",
+    },
+}

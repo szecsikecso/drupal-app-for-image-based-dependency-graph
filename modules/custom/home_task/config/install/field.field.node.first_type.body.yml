@@ -1,0 +1,25 @@
+uuid: f24a1f31-0497-48b6-ae88-c40ee79b8fa8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.first_type
+  module:
+    - text
+_core:
+  default_config_hash: GX3gu22-4sqr8fAy2zoK-C9Cz7Im8SnsnkWeso-e9EQ
+id: node.first_type.body
+field_name: body
+entity_type: node
+bundle: first_type
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

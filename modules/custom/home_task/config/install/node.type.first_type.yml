@@ -1,0 +1,20 @@
+uuid: 3f299870-1d07-4126-957f-f451c916e6bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: b2yS_YuDpNIdg9Vo0vIvqVVGDExXlk60e143wdsChPI
+name: 'First Type'
+type: first_type
+description: 'First content type for my home task'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

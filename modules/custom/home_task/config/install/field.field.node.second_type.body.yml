@@ -1,0 +1,25 @@
+uuid: af1d1cff-d308-412d-900b-472d3188e59c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.second_type
+  module:
+    - text
+_core:
+  default_config_hash: KRcokGoXjMPlvAL0K7p5Z8IckVRF4USAFKtjd3LzDFM
+id: node.second_type.body
+field_name: body
+entity_type: node
+bundle: second_type
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

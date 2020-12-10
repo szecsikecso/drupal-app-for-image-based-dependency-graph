@@ -1,0 +1,39 @@
+uuid: 2dbb33aa-2d04-40ef-8896-340b16871249
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.first_type.body
+    - field.field.node.first_type.field_home_task_date
+    - node.type.first_type
+  module:
+    - datetime
+    - text
+    - user
+_core:
+  default_config_hash: _Gsv4ICABdYiELP1t1Mbq9BCrKZNQxQV24AdAq03Cr4
+id: node.first_type.default
+targetEntityType: node
+bundle: first_type
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_home_task_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

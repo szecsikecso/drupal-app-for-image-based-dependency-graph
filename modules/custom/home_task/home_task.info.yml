@@ -1,0 +1,5 @@
+name: 'Home Task'
+type: module
+description: 'My Home Task Module'
+core: 8.x
+package: 'Custom'

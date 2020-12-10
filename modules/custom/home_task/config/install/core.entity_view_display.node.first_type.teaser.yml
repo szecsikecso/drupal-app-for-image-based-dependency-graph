@@ -1,0 +1,32 @@
+uuid: de240775-81e8-4bac-9e58-ca909abf9eb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.first_type.body
+    - field.field.node.first_type.field_home_task_date
+    - node.type.first_type
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: 3-WrpAV2bCS7pekt7tb_upuy9i7gDKZMiZCIvOE_h50
+id: node.first_type.teaser
+targetEntityType: node
+bundle: first_type
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_home_task_date: true
