@@ -2,6 +2,7 @@
 CONTENTS OF THIS FILE
 ---------------------
 
+ * About the Project
  * About Drupal
  * Configuration and features
  * Installation profiles
@@ -9,6 +10,12 @@ CONTENTS OF THIS FILE
  * Developing for Drupal
  * More information
 
+ABOUT THE PROJECT
+-----------------
+
+* 1st: Log routeId and the basic route at all reqest into watchDog
+* 2nd: Create two different Content types and from the source code add a common field to both Content types.
+* 3rd:  Create a page where user can check the Drupal core dependency graph
 
 ABOUT DRUPAL
 ------------
